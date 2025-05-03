@@ -1,0 +1,5 @@
+{
+  "reactSnippets.settings.prettierEnabled": false,
+  "prettier.configPath": "",
+  "vs-code-prettier-eslint.prettierLast": false
+}
