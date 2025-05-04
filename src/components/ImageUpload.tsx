@@ -1,13 +1,6 @@
 import React, { useRef, useState } from "react";
-import {
-  IKImage,
-  IKVideo,
-  ImageKitProvider,
-  IKUpload,
-  ImageKitContext,
-} from "imagekitio-next";
+import { IKImage, ImageKitProvider, IKUpload } from "imagekitio-next";
 import config from "@/lib/config";
-import { Button } from "./ui/button";
 import Image from "next/image";
 import { toast } from "@/hooks/use-toast";
 
@@ -20,7 +13,7 @@ const {
 
 const authenticator = async () => {
   try {
-    const response = await fetch(`${apiEndpoint}/api/auth/imagekit`);
+    const response = await fetch(`${apiEndpoint}/api/imagekit`);
 
     if (!response.ok) {
       const error = await response.text();

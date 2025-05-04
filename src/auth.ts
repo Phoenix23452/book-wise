@@ -1,7 +1,7 @@
 import { db } from "@/database/drizzle";
 import { users } from "@/database/schema";
-import { eq } from "drizzle-orm";
 import { compare } from "bcryptjs";
+import { eq } from "drizzle-orm";
 import NextAuth, { User } from "next-auth";
 import CredentialProviders from "next-auth/providers/credentials";
 export const { handlers, signIn, signOut, auth } = NextAuth({
