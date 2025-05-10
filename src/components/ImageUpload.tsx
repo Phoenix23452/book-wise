@@ -13,7 +13,7 @@ const {
 
 const authenticator = async () => {
   try {
-    const response = await fetch(`${apiEndpoint}/api/imagekit`);
+    const response = await fetch(`/api/imagekit`);
 
     if (!response.ok) {
       const error = await response.text();
